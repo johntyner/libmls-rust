@@ -1,9 +1,7 @@
 QUIET	:= @
 
-all:
-
-test:
-	$(QUIET)cargo test
+build test:
+	$(QUIET)cargo $(@)
 
 fmt:
 	$(QUIET)find src -name "*.rs" -exec rustfmt {} \;
